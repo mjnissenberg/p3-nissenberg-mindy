@@ -1,0 +1,299 @@
+/*================================
+
+Universal Styling
+
+=================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+@font-face {
+  font-family: "Gentona Book";
+  src: url(../fonts/gentona-book.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Gentona Light";
+  src: url(../fonts/gentona-light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Gentona Thin";
+  src: url(../fonts/gentona-thin.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Gentona Bold";
+  src: url(../fonts/gentona-bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Gentona Semibold";
+  src: url(../fonts/gentona-semibold.otf) format("opentype");
+}
+
+header {
+  background-color: #00529b;
+  padding: 20px 10px 10px;
+  width: 100%;
+  max-height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+  font-family: "Gentona Light", sans-serif;
+  font-size: 20px;
+}
+
+header > a {
+    display: inline-block;
+    width: 20%;
+}
+
+.top-logo {
+  padding-bottom: 10px;
+}
+
+.top-logo,
+nav {
+  display: inline-block;
+}
+
+nav a:hover{
+  color: #f2a06a;
+  text-decoration: underline;
+}
+
+.bar {
+  text-align: right;
+  margin-right: 40px;
+  width: 70%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 25px;
+}
+
+header > a {
+    display: inline-block;
+    width: 20%;
+}
+
+.top-image img {
+  width: 100%;
+}
+
+.h1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+h1 {
+  font-family: "Gentona Light", sans-serif;
+  font-size: 36px;
+  color: #f37021;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1:after {
+  display: inline-block;
+  margin: 0 0 5px 20px;
+  height: 2px;
+  content: " ";
+  background-color: #f37021;
+  width: 200px;
+}
+
+h1:before {
+  content: " ";
+  display: inline-block;
+  margin: 0 20px 5px 0;
+  height: 2px;
+  background-color: #f37021;
+  width: 200px;
+}
+
+h2,
+h3 {
+  font-family: "Gentona Light", sans-serif;
+  color: #f37021;
+}
+
+h2{
+  font-size: 36px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.blue-line{
+  margin: 100px auto;
+  height: 3px;
+  content: " ";
+  background-color: #a8dcd9;
+  width: 500px;
+}
+
+footer {
+  background-color: #00529b;
+  padding: 40px 0px;
+  width: 100%;
+  max-height: 100px;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  z-index: 98;
+}
+
+footer a {
+  color: #ffffff;
+  font-size: 32px;
+  margin: 0 5px;
+  transition: .3s;
+}
+
+footer a:hover {
+  color: #f2a06a;
+  transition: .3s;
+}
+
+footer p {
+  font-family: "Gentona Light", sans-serif;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.book-logo,
+footer p{
+  display: inline-block;
+}
+
+.book-logo:hover{
+  animation: spin 4s infinite;
+}
+@keyframes spin {
+  0% {
+    transform:rotateY(0);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+/*================================
+
+About Styling
+
+=================================*/
+
+.anchor-links nav a {
+  color: #23282f;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.anchor-links{
+  text-align: center;
+  margin: 20px 0;
+}
+.anchor-links nav ul li {
+  display: inline;
+  margin: 0 20px;
+  font-family: "Gentona Light", sans-serif;
+  color: #23282f;
+  font-size: 20px;
+}
+
+.anchor-links a:hover{
+  color: #23282f;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #f2a06a
+}
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px 0 100px;
+}
+
+.about-container p {
+  font-family: "Gentona Light", sans-serif;
+  font-size: 18px;
+  color: #23282f;
+  text-align: justify;
+  padding-top: 15px;
+}
+
+.about-container p::selection {
+  background: #a8dcd9;
+  color: white;
+}
+
+.venn {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.mission-section ul{
+  font-family: "Gentona Light", sans-serif;
+  font-size: 18px;
+  color: #23282f;
+  padding: 10px 0 10px 5px;
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+.back-to-top{
+  font-family: "Gentona Semibold", sans-serif;
+  font-size: 14px;
+  color: #00529b;
+  text-decoration: none;
+}
+
+.back-to-top:hover{
+  color: #709ad9;
+}
+
+/*================================
+
+Team Section Styling
+
+=================================*/
+
+.members img {
+  width: 210px;
+  padding-top: 20px;
+}
+
+.members img:hover{
+  opacity: 80%;
+}
+
+.members {
+  width: 250px;
+  display: inline-block;
+}
+
+.team-members {
+  text-align: center;
+}
+
+.team-members p {
+  padding: 0;
+  text-align: center;
+  font-size: 16px;
+}
