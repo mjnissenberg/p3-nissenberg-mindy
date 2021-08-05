@@ -318,20 +318,13 @@ Resources Styling
   margin: 0 auto;
 }
 
-.resources{
-  width: 400px;
-  display: inline-block;
-  text-align: center;
-  padding: 20px;
-}
-
 .resources img{
   width: 350px;
 }
 
 .resources h2{
   font-size: 24px;
-  padding-bottom: 10px;
+  padding: 15px 0 25px 0;
 }
 
 .resources p{
@@ -354,9 +347,17 @@ Resources Styling
   font-size: 16px;
   color: #00529b;
   text-decoration: none;
-  text-align: left;
+  text-align: center;
 }
 
 .resources a:hover{
   color: #709ad9;
+}
+
+.resources{
+  width: 49%;
+  display: inline-block;
+  padding: 0 15px;
+  box-sizing: border-box;
+  text-align: center;
 }
