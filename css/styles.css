@@ -224,13 +224,13 @@ About Styling
   text-decoration-color: #f2a06a
 }
 
-.about-container {
+.top-container {
   max-width: 800px;
   margin: 0 auto;
   padding: 10px 0 100px;
 }
 
-.about-container p {
+.top-container p {
   font-family: "Gentona Light", sans-serif;
   font-size: 18px;
   color: #23282f;
@@ -238,7 +238,7 @@ About Styling
   padding-top: 15px;
 }
 
-.about-container p::selection {
+.top-container p::selection {
   background: #a8dcd9;
   color: white;
 }
@@ -296,4 +296,67 @@ Team Section Styling
   padding: 0;
   text-align: center;
   font-size: 16px;
+}
+
+/*================================
+
+Resources Styling
+
+=================================*/
+.top-image-resources {
+  text-align: center;
+  padding-top: 200px;
+}
+
+.top-image-resources img {
+  width: 80%;
+  text-align: center;
+}
+
+.resources-container{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.resources{
+  width: 400px;
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+}
+
+.resources img{
+  width: 350px;
+}
+
+.resources h2{
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+.resources p{
+  padding-bottom: 20px;
+  text-align: justify;
+  font-family: "Gentona Light", sans-serif;
+  font-size: 18px;
+  color: #23282f;
+}
+
+.resources p::selection,
+.resources a::selection {
+  background: #a8dcd9;
+  color: white;
+}
+
+.resources a{
+  display: block;
+  font-family: "Gentona Semibold", sans-serif;
+  font-size: 16px;
+  color: #00529b;
+  text-decoration: none;
+  text-align: left;
+}
+
+.resources a:hover{
+  color: #709ad9;
 }
