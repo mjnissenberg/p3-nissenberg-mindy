@@ -184,6 +184,12 @@ footer p{
 .book-logo:hover{
   animation: spin 4s infinite;
 }
+
+footer .book-logo {
+    position: relative;
+    top: 4px;
+}
+
 @keyframes spin {
   0% {
     transform:rotateY(0);
@@ -300,7 +306,7 @@ Team Section Styling
 
 /*================================
 
-Resources Styling
+Resource Page Styling
 
 =================================*/
 .top-image-resources {
@@ -360,4 +366,58 @@ Resources Styling
   padding: 0 15px;
   box-sizing: border-box;
   text-align: center;
+  padding: 0 15px 70px;
+}
+
+/*================================
+
+Program Page Styling
+
+=================================*/
+
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.left-side,
+.right-side{
+  width: 45%;
+  display: inline-block;
+}
+
+.left-side img{
+  width: 450px;
+}
+
+.right-side{
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+
+.right-side p{
+  font-family: "Gentona Light", sans-serif;
+  font-size: 18px;
+  color: #23282f;
+  text-align: justify;
+  padding-bottom: 15px;
+}
+
+.right-side h2{
+  padding-bottom: 10px;
+  font-size: 24px;
+  text-align: left;
+}
+
+.right-side a{
+  display: block;
+  font-family: "Gentona Semibold", sans-serif;
+  font-size: 16px;
+  color: #00529b;
+  text-decoration: none;
+  text-align: left;
+  }
+
+.right-side a:hover{
+  color: #709ad9;
 }
