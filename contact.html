@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title>UFLI | Contact Us</title>
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--Favicons-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/00c1af50d4.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+
+    <header>
+      <a href="https://education.ufl.edu/ufli" target="_blank"> <img class="top-logo" src="images/ufli-logo-wide.png" alt="UFLI logo" width="300"></a>
+
+      <div class="bar">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="about.html">About</a>
+            <li><a href="contact.html">Contact</a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="top-image">
+        <img src="images/contact/contact-photo.jpg" alt="teachers pointing at computer" title="Contact UFLI online">
+      </div>
+
+      <section class="h1">
+        <h1>We'd love to hear from you!</h1>
+      </section>
+
+      <div class="top-container">
+        <p>If you have questions about our programs or resources, are interested in professional development experiences for your school district, or would like to find out ways to get involved, please contact us.</p>
+
+        <form class="contact-form" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
+
+          <div class="first-name input-section">
+            <label for="firstname" class="label-input-wrap">First Name:</label>
+            <input type="text" name="req_firstname" id="firstname" />
+          </div>
+
+          <div class="last-name input-section">
+            <label for="lastname" class="label-input-wrap">Last Name:</label>
+            <input type="text" name="req_lastname" id="lastname" />
+          </div>
+
+          <div class="email input-section">
+            <label for="email" class="label-input-wrap">Email Address:</label>
+            <input type="email" name="req_email" id="email" />
+          </div>
+
+          <div class="dropdown input-section">
+            <label for="position" class="label-input-wrap">Position:</label>
+            <select name="position" id="position">
+              <option value="teacher">Teacher</option>
+              <option value="coach">Instructional Coach</option>
+              <option value="admin">Administrator</option>
+              <option value="teach-ed">Teacher Educator</option>
+              <option value="parent">Parent</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="message input-section">
+            <label for="message" class="label-input-wrap">Message:</label>
+            <textarea name="message" id="message" rows="10" cols="50"></textarea>
+          </div>
+
+          <div class="submit">
+            <input type="submit" value="Submit">
+          </div>
+
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <img class="book-logo" src="images/small-logo-white.png" alt="ufli logo" width="90">
+      <p>Follow UFLI on social media:
+        <a href="https://facebook.com/UFLiteracy" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://twitter.com/UFLiteracy" target="_blank"><i class="fab fa-twitter-square"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube-square"></i></a>
+      </p>
+    </footer>
+  </body>
+</html>
