@@ -21,11 +21,6 @@ Universal Styling
 }
 
 @font-face {
-  font-family: "Gentona Thin";
-  src: url(../fonts/gentona-thin.otf) format("opentype");
-}
-
-@font-face {
   font-family: "Gentona Bold";
   src: url(../fonts/gentona-bold.otf) format("opentype");
 }
@@ -64,7 +59,8 @@ header > a {
 }
 
 .top-logo {
-  padding-bottom: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
 }
 
 .top-logo,
@@ -93,6 +89,7 @@ header > a {
 
 .top-image img {
   width: 100%;
+  left: 30px;
 }
 
 .h1 {
@@ -139,12 +136,27 @@ h2{
   padding-bottom: 40px;
 }
 
+p{
+  line-height: 1.4em;
+}
+
 .blue-line{
   margin: 100px auto;
   height: 3px;
   content: " ";
   background-color: #a8dcd9;
   width: 500px;
+}
+
+.back-to-top{
+  font-family: "Gentona Semibold", sans-serif;
+  font-size: 14px;
+  color: #00529b;
+  text-decoration: none;
+}
+
+.back-to-top:hover{
+  color: #709ad9;
 }
 
 footer {
@@ -233,7 +245,7 @@ About Styling
 .top-container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 10px 0 100px;
+  padding: 10px 0 10px;
 }
 
 .top-container p {
@@ -242,11 +254,6 @@ About Styling
   color: #23282f;
   text-align: justify;
   padding-top: 15px;
-}
-
-.top-container p::selection {
-  background: #a8dcd9;
-  color: white;
 }
 
 .venn {
@@ -263,16 +270,6 @@ About Styling
   list-style-position: inside;
 }
 
-.back-to-top{
-  font-family: "Gentona Semibold", sans-serif;
-  font-size: 14px;
-  color: #00529b;
-  text-decoration: none;
-}
-
-.back-to-top:hover{
-  color: #709ad9;
-}
 
 /*================================
 
@@ -321,7 +318,7 @@ Resource Page Styling
 
 .resources-container{
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 60px auto;
 }
 
 .resources img{
@@ -334,20 +331,21 @@ Resource Page Styling
 }
 
 .resources p{
-  padding-bottom: 20px;
+  padding: 0 30px 20px 20px;
   text-align: justify;
   font-family: "Gentona Light", sans-serif;
   font-size: 18px;
   color: #23282f;
 }
 
-.resources p::selection,
-.resources a::selection {
+p::selection,
+a::selection {
   background: #a8dcd9;
   color: white;
 }
 
-.resources a{
+.resources a,
+.home-buttons a{
   display: block;
   font-family: "Gentona Semibold", sans-serif;
   font-size: 16px;
@@ -367,6 +365,10 @@ Resource Page Styling
   box-sizing: border-box;
   text-align: center;
   padding: 0 15px 70px;
+}
+
+.top-resources p{
+  padding-bottom: 80px;
 }
 
 /*================================
@@ -393,6 +395,7 @@ Program Page Styling
 .right-side{
   padding-left: 40px;
   padding-bottom: 40px;
+  vertical-align: top;
 }
 
 .right-side p{
@@ -471,4 +474,99 @@ select {
 
 textarea {
   width: 400px;
+}
+
+/*================================
+
+Home Page Styling
+
+=================================*/
+
+.top-image .book-img{
+  padding-top: 45px;
+}
+
+.book-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: 30%;
+}
+
+.book-text p {
+  font-family: "Gentona Semibold", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 1px 1px 0 #23282f;
+  border: 3px solid #ffffff;
+  padding: 10px;
+  font-size: 48px;
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+span{
+  font-family: "Gentona Book", sans-serif;
+  font-weight: bold;
+}
+
+.sor-section{
+  width: 100%;
+  height: 500px;
+  background: #f2a06a;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.sor-text,
+.donate-text{
+  font-family: "Gentona Book", sans-serif;
+  width: 50%;
+  margin: 0 auto;
+  top: 30;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 1.4em;
+}
+
+.sor-text h2{
+  color: #23282f;
+}
+
+.donate-section{
+  width: 100%;
+  background: #a8dcd9;
+  margin: 0 auto;
+  padding: 50px 0;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px #d1d1d1;
+}
+
+.donate-text h2{
+  color: #00529b;
+}
+.donate-text p{
+  padding-bottom: 40px;
+}
+
+.donate-text a{
+  font-family:"Gentona Book", sans-serif;
+  color: white;
+  font-size: 24px;
+  background: #f37021;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.donate-text a:hover{
+  color: #f2a06a;
 }
